@@ -1,9 +1,9 @@
 # Action
 The snake movements depends on several actions. These actions can be classified as:
 
-STRAIGHT  ->  [1, 0, 0]\n
-RIGHT     ->  [0, 1, 0]\n
-LEFT      ->  [0, 0, 1]\n
+STRAIGHT  ->  [1, 0, 0]<br />
+RIGHT     ->  [0, 1, 0]<br />
+LEFT      ->  [0, 0, 1]<br />
 
 As shown, the snake cannot turn backwards while moving in a straight direction. If the snake is moving forward, the only option is to either turn left or right. This is implemented to prevent the snake from turning it's head 180 degrees and running into itself. Without this, the snake would easily make errors that would cause premature death.
 
