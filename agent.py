@@ -135,7 +135,6 @@ def train():
             plotter(scores, mean_scores)
 
 
-
 if __name__ == "__main__":
     train()
 

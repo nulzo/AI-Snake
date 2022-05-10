@@ -3,12 +3,18 @@ import random
 from enum import Enum
 from collections import namedtuple
 import numpy as np
+from StartWindow import *
+from main_menu import *
+
+startup = Game()
+
+while startup.running:
+    startup.current_menu.display_menu()
+    startup.game_loop()
 
 pygame.init()
 font = pygame.font.Font('abduction2002.ttf', 20)
-disp_font = pygame.font.Font('abduction2002.ttf', 14)
-
-
+disp_font = pygame.font.Font('Starlight.ttf', 14)
 #reset
 #reward
 #play(action)
@@ -50,6 +56,7 @@ class AISnake:
         pygame.display.set_caption('Reinforcement Learning Snake')
         self.clock = pygame.time.Clock()
         self.AI_reset()
+
 
     def AI_reset(self):
         self.direction = Direction.move_right
