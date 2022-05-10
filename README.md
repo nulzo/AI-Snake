@@ -24,3 +24,6 @@ There are several states in which the snake can inhabit. These states are:
    
 # Model
 The model is trained on PyTorch, a machine learning library built for python.
+
+# Improvements
+This model can easily be improved upon. The main problem with the model is that it frequently crashes into itself when trying to find an optimal route to the treat. One such way to improve the model is to implement a convolutional layer that analyses the board during each new iteration. This would allow the snake to make more informed decisions each new cycle. This will likely be added in future updates.
